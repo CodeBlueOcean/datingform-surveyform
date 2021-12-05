@@ -1,0 +1,21 @@
+div {                    /* Element/Type Selector */
+    background: blue;
+}
+
+.bg-red {                /* Class Selector */
+    background: red;
+}
+
+#bg-green {              /* ID Selector */
+    background: green;
+}
+
+/* List Inline Styles 1000 points, ID 100 points, Class 10 points, Element/type 1 points (Highest to Lowest)*/ 
+
+div {
+    background: blue;
+}
+
+.bg-red {
+    background: red;
+}

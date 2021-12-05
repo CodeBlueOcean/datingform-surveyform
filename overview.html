@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <form action="https://learn.nucamp.co/show_everything.php" method="post" value="Conan">
+        Enter your avatar name:
+        <input type="text" name="avatarName" placeholder="Avatar Name" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <form action="https://learn.nucamp.co/show_everything.php" method="post">
+        <!--Single Checkbox Input-->
+        <div>
+            Delivery? <input type="checkbox" name="delivery" />
+        </div>
+        <!--Multiple Checkbox Input-->
+        <div>
+            Milk <input type="checkbox" name="groceries" value="milk"/>
+            Eggs <input type="checkbox" name="groceries" value="eggs"/>
+            Bread <input type="checkbox" name="groceries" value="bread"/>
+        </div>
+        <!--Group of Multiple Checkbox Input-->
+        <div>
+            Pay by Cash <input type="radio" name="payment" value="cash" required />
+            Pay by Check <input type="radio" name="payment" value="check" />
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+    <form action="handleForm.php" method="post" enctype="multipart/form-data">
+        <!--Range-->
+        <div>
+            My Rating? <input type="range" name="myRating" min="1" max="10" />
+        </div>
+        <!--Color-->
+        <div>
+            Choose a color: <input type="checkbox" name="color" value="myColor"/>
+        </div>
+        <!--File-->
+        <div>
+            Upload your file: <input type="file" name="myFile" />
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!--Fieldset and Legend-->
+    <fieldset>
+        <legend>Your Information</legend>
+        <input type="text" name="firstName" placeholder="Your First Name" required />
+        <input type="text" name="lastname" placeholder="Your Last Name" required />
+    </fieldset>
+    <!--Textarea-->
+    <textarea name="feedback" rows="5" cols="60" placeholder="Your feedback here">
+    </textarea>
+    <!--select-->
+    <select name="flavor">
+        <option value="mint">Mint</option>
+        <option value="cherry">Cherry</option>
+        <option value="lime">Lime</option>
+    <!--Label Example-->
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" />
+</select>
+</body>
+</html>
+
